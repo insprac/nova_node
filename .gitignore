@@ -2,7 +2,6 @@
 /cover
 /deps
 /doc
-/rel
 /.fetch
 erl_crash.dump
 *.ez
