@@ -4,7 +4,7 @@ defmodule NovaNode.Mixfile do
   def project do
     [
       app: :nova_node,
-      version: "0.0.1",
+      version: "0.0.2",
       elixir: "~> 1.4",
       elixirc_paths: elixirc_paths(Mix.env),
       compilers: [:phoenix, :gettext] ++ Mix.compilers,
@@ -31,7 +31,8 @@ defmodule NovaNode.Mixfile do
       {:phoenix_ecto, "~> 3.2"},
       {:postgrex, ">= 0.0.0"},
       {:gettext, "~> 0.11"},
-      {:cowboy, "~> 1.0"}
+      {:cowboy, "~> 1.0"},
+      {:distillery, "~> 1.5", runtime: false}
     ]
   end
 
