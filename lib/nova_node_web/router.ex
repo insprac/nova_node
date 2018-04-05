@@ -14,5 +14,8 @@ defmodule NovaNodeWeb.Router do
     get "/tokens/:id", TokenController, :show
     post "/tokens", TokenController, :create
     post "/tokens/random", TokenController, :create_random
+
+    get "/query/sources", QueryController, :list_sources
+    get "/query/by_source", QueryController, :list_by_source
   end
 end
